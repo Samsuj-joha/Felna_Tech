@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from './components/Header/page'
 
 const Page = () => {
   return (
     <div>
-      <h1>this is a heading tag</h1>
-      <p>This is a paragraph tag now</p>
+      {/* ====== Header Start ===== */}
+      <Header/>
+      {/* ====== Header End ===== */}
     </div>
   )
 }
