@@ -1,16 +1,14 @@
-import React from 'react'
+
 import Header from './components/Header/page'
 import Navbar from './components/Navbar/navbar'
+import Hero from './components/Hero/page'
 
 const Page = () => {
   return (
     <div>
-      {/* ====== Header Start ===== */}
       <Header/>
-      {/* ====== Header End ===== */}
-      {/* ==== Navbar Start ==== */}
       <Navbar/>
-      {/* ==== Navbar End ==== */}
+      <Hero/>
     </div>
   )
 }
