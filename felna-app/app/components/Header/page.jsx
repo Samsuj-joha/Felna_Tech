@@ -2,13 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from './../../../Images/felna-logo.png'
 import user from './../../../Images/user.png'
+import Search from './../../../Images/search.png'
+import Add from './../../../Images/picture.jpg'
 const Header = () => {
   return (
     <>
     {/* ========= Header section Start ======== */}
     <header className="w-full h-auto bg-black overflow-hidden ">
       <div className=''>
-        <div className='text-white text-center sm:flex gap-4 sm:justify-center items-center'>
+        <div className='text-white text-center pt-1 sm:flex gap-4 sm:justify-center items-center lg:pt-2'>
           <div>
             <Link href="#">
               <p>+880237858787587</p>
@@ -32,11 +34,26 @@ const Header = () => {
             </Link>
           </div>
           <div className="search">
-            <form action="">
+            <div className="w-52 relative md:w-96">
+              <input
+                type="text"
+                className="w-full h-10 px-3 py-2 text-gray-700 border-2 border-gray-200 rounded-lg focus:outline-none "
+                placeholder="Search..."
+              />
+              <button className="absolute top-1 right-3 p-1 rounded-md ">
+               <Image className=''
+                src={Search}
+                width={22}
+                height={20}
+               />
+              </button>
+            </div>
+
+            {/* <form action="">
               <input type="text" placeholder='Search' />
-            </form>
+            </form> */}
           </div>
-          <div className="icon">
+          <div className="icon flex">
             <div className="flex">
               <div>
                 <Link href="#">
@@ -60,8 +77,16 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            <div>
+              <Link href="#">
+                <Image
+                  src={Add}
+                  width={50}
+                  height={40}
+                />
+              </Link>
+            </div> 
           </div>
-            
         </div>
       </div>
 
