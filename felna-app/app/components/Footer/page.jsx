@@ -5,8 +5,8 @@ import igl from './../../../Images/felna-logo.png'
 const Footer = () => {
   return (
     <>
-    <footer className='px-36 pt-12 mt-8 bg-slate-800 text-white'>
-        <div className="footer-part flex gap-x-40">
+    <footer className=' bg-slate-800 text-white '>
+        <div className="grid grid-cols-2 px-16 py-5 gap-5 lg:grid-cols-3 2xl:grid-rows-1 2xl:grid-cols-4 2xl:container 2xl:mx-24">
             <div>
                 <Link href='/'>
                     <Image

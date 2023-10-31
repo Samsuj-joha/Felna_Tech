@@ -16,7 +16,7 @@ import 'swiper/css/scrollbar';
 const Hero= () => {
   return (
    <>
-    <div className=" grid lg:grid-cols-2 lg:container lg:mx-auto lg:pt-20">
+    <div className=" lg:grid lg:grid-cols-2 lg:container lg:mx-auto lg:pt-20">
       <div className=' '>
         <Swiper className=' lg:h-3/4'
           // install Swiper modules
