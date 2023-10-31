@@ -16,9 +16,9 @@ import 'swiper/css/scrollbar';
 const Hero= () => {
   return (
    <>
-    <div className=" lg:grid lg:grid-cols-2 lg:container lg:mx-auto lg:pt-20">
+    <div className=" lg:grid lg:grid-cols-2 lg:container lg:mx-auto lg:pt-14">
       <div className=' '>
-        <Swiper className=' lg:h-3/4'
+        <Swiper className=' lg:h-3/4 z-0'
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={0}
@@ -53,20 +53,20 @@ const Hero= () => {
           
         </Swiper>
       </div>
-      <div className='grid-cols-2 '>
+      <div className='lg:grid-cols-2 '>
         <div className='flex flex-col justify-center items-center gap-6 '>
           <div className="right-1">
             <Image className='object-cover h-56'
                 src={Slider2}
                 width={400}
-                height={100}
+                height={500}
               />
           </div>
           <div className="right-2">
             <Image className='object-cover  h-56'
                 src={Slider3}
                 width={400}
-                height={400}
+                height={500}
             />
           </div>
         </div>
