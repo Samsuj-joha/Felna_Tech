@@ -16,12 +16,12 @@ import 'swiper/css/scrollbar';
 const Hero= () => {
   return (
    <>
-    <div className=" py-8 gap-5 2xl:flex 2xl:container 2xl:mx-auto   ">
-      <div className=' mx-auto  '>
-        <Swiper className='lg:max-w-screen-lg lg:h-3/4 xl:max-w-screen-lg xl:h-3/4 2xl:max-w-screen-lg 2xl:h-3/4 sm:mx-auto md:mx-auto lg:mx-auto  xl:mx-auto'
+    <div className=" grid lg:grid-cols-2 lg:container lg:mx-auto lg:pt-20">
+      <div className=' '>
+        <Swiper className=' lg:h-3/4'
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
+          spaceBetween={0}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
@@ -29,7 +29,7 @@ const Hero= () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide>
+          <SwiperSlide className='w-96'>
             <Image className='object-cover'
               src={Slider1}
               width={1100}
@@ -54,16 +54,16 @@ const Hero= () => {
         </Swiper>
       </div>
       <div className='grid-cols-2 '>
-        <div className='flex flex-col justify-center items-center gap-5 py-3'>
+        <div className='flex flex-col justify-center items-center gap-6 '>
           <div className="right-1">
-            <Image className='object-cover '
+            <Image className='object-cover h-56'
                 src={Slider2}
                 width={400}
                 height={100}
               />
           </div>
           <div className="right-2">
-            <Image className='object-cover'
+            <Image className='object-cover  h-56'
                 src={Slider3}
                 width={400}
                 height={400}

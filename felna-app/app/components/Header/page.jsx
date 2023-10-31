@@ -68,10 +68,10 @@ const Header = () => {
               <div>
                 <p className='text-white transition-all hover:text-orange-400 text-sm'>Account</p>
                 <div className="flex">
-                  <Link href = "/">
+                  <Link href = "/components/Register">
                     <h3 className='text-white transition-all hover:text-orange-400 text-sm'>Registration</h3>
                   </Link>
-                  <Link href = "/">
+                  <Link href = "/components/Login">
                     <h3 className='text-white transition-all hover:text-orange-400 text-sm ml-3 '>Login</h3>
                   </Link>
                 </div>
