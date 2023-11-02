@@ -6,7 +6,7 @@ import banner from './../../../images/banner.jpg';
 const Card = () => {
   return (
     <>
-    <div className="my-5 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:mx-auto 2xl:mx-auto 2xl:container 2xl:grid-cols-5 2xl:m-5 ">
+    <div className="my-5 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:mx-auto 2xl:mx-auto 2xl:container 2xl:grid-cols-5 ">
        <div className="w-80 border-4 rounded-md mx-auto p-3">
             <div className="card-image">
                 <Image className="mx-auto pb-2"
