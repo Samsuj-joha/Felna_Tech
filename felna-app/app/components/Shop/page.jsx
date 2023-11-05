@@ -1,10 +1,25 @@
-import React from 'react'
+'use client'
+import React,{useState,useEffect} from 'react'
 import Image from "next/image"
 import Slider3 from './../../../images/product-6.jpg'
 import Header from '../Header/page'
 import Navbar from '../Navbar/navbar'
 import Footer from '../Footer/page'
 const Shop = () => {
+  const[item,setItem] = useState(0);
+  useEffect(()=>{
+    const handleClick=()=>{
+    
+      setItem(item + 1)
+      
+    }
+  },[item])
+
+  // const handleClick1=()=>{
+    
+  //   setItem(item - 1)
+    
+  // }
   return (
     <>
     <Header/>
@@ -26,15 +41,18 @@ const Shop = () => {
             <p className="text-gray-500">Product description:</p>
             <p className='w-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dignissimos, necessitatibus eaque obcaecati magnam explicabo dolores nemo totam quam? Earum ab consequuntur est expedita et reiciendis deserunt eveniet numquam quisquam.</p>
             <p className="text-gray-500 font-bold pt-5">Price: $56767</p>
+            <div className='flex gap-3 pt-5'>
+              
+            <button  className='text-2xl px-2 bg-slate-400 text-white' >+</button>
+            <input type="text" className='w-12 outline-none text-center'  onChange={(e)=>setItem(e.target.value)} value={item} />
+            <button className='text-2xl px-3 bg-slate-400 text-white' >-</button>
           </div>
+          </div>
+          
         </div>
 
         <form  className="flex flex-col w-full max-w-md">
-          <input
-            type="number"
-            placeholder="Quantity"
-            className="mb-5 border border-gray-300 p-2 rounded "
-          />
+          
           <button
             type="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-md m-auto"
